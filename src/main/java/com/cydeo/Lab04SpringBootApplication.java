@@ -14,8 +14,6 @@ public class Lab04SpringBootApplication {
         RecipeService recipeService = container.getBean(RecipeService.class);
         recipeService.prepareRecipe();
 
-
-
         RecipeCreatorConfig recipeCreatorConfig = container.getBean(RecipeCreatorConfig.class);
         System.out.println("recipeCreatorConfig.getFirstName() = " + recipeCreatorConfig.getFirstName());
         System.out.println("recipeCreatorConfig.getLastName() = " + recipeCreatorConfig.getLastName());
